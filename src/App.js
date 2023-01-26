@@ -1,14 +1,13 @@
+import "./assets/style/reset.css";
 import "./assets/style/style.scss";
+import Cover from "./components/Cover";
 import Footer from "./components/Footer";
-import Header from "./components/Header";
 import Main from "./components/Main";
-import Object from "./components/Object";
 
 function App() {
   return (
     <>
-      <Object />
-      <Header />
+      <Cover />
       <Main />
       <Footer />
     </>
