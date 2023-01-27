@@ -1,10 +1,16 @@
-import React from 'react';
+import Cover from "./Cover";
+import Skills from "./Skills";
+import Works from "./Works";
+import Contact from "./Contact";
 
-function Main(props) {
+function Main() {
   return (
-    <div>
-      
-    </div>
+    <>
+      <Cover />
+      <Skills />
+      <Works />
+      <Contact />
+    </>
   );
 }
 

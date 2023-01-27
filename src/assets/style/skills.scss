@@ -1,0 +1,67 @@
+.article_skills {
+  margin-top: 215px;
+  h3 {
+    width: 410px;
+    text-align: right;
+    padding: 13px 0;
+    font-size: 70px;
+    font-weight: 700;
+    border-bottom: 1px solid #000;
+    margin-bottom: 80px;
+  }
+  .skillsList {
+    display: flex;
+    justify-content: end;
+    h4 {
+      width: 280px;
+      font-size: 40px;
+      position: relative;
+      padding-right: 130px;
+      margin-top: 50px;
+      &::before {
+        content: "";
+        position: absolute;
+        width: 8.5px;
+        height: 37px;
+        background-color: #878787;
+        border-radius: 9px 0 0 9px;
+        left: -35px;
+      }
+    }
+    &:nth-of-type(1) h4::before {
+      background-color: #fa9856;
+    }
+    &:nth-of-type(2) h4::after {
+      content: "(ES6+)";
+      font-size: 18px;
+      font-weight: 500;
+      color: #878787;
+      margin-left: 15px;
+    }
+    &:nth-of-type(2) h4::before {
+      background-color: #EDE862;
+    }
+    &:nth-of-type(3) h4::before {
+      background-color: #22559C;
+    }
+    &:nth-of-type(4) h4::before {
+      background-color: #73508E;
+    }
+    &:nth-of-type(5) h4::before {
+      background-color: #F27370;
+    }
+    ul {
+      width: 835px;
+      list-style: disc;
+      border-bottom: 1px solid #878787;
+      padding: 50px 0 50px 30px;
+      li {
+        font-weight: 500;
+        margin-bottom: 23px;
+        &::marker {
+          color: #878787;
+        }
+      }
+    }
+  }
+}

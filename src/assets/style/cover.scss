@@ -1,0 +1,35 @@
+.article_cover {
+  height: 100vh;
+  display: flex;
+  letter-spacing: 0;
+  padding: 0 160px;
+  .mainTitle {
+    font-size: 100px;
+    line-height: 1.17;
+    padding-top: 440px;
+    letter-spacing: -6px;
+  }
+  .subTitle {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    grid-auto-rows: 1fr 1fr;
+    margin-top: auto;
+    margin-left: auto;
+    padding-bottom: 100px;
+    p {
+      font-size: 20px;
+      &:first-child {
+        font-size: 50px;
+        font-weight: 100;
+        grid-row: span 2;
+        margin-top: 7px;
+      }
+      &:nth-child(2) {
+        margin-bottom: 35px;
+      }
+      em {
+        color: #878787;
+      }
+    }
+  }
+}
