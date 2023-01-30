@@ -9,10 +9,8 @@ function Skills() {
   useEffect(() => {
     setData(skillsData);
   }, []);
-
-  console.log(data);
   return (
-    <article className="article_skills">
+    <article className="article_skills headline">
       <h3>Skills</h3>
 
       {data.map((skills) => (

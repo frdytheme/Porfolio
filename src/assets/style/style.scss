@@ -4,6 +4,7 @@
 :root {
   --color-lightGrey: #878787;
   --color-softBlk: #2d2d2d;
+  --transition-custom: .4s cubic-bezier(.49,.06,.08,1);
 }
 body {
   font-family: "Pretendard", sans-serif;

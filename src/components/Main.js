@@ -3,14 +3,16 @@ import Skills from "./Skills";
 import Works from "./Works";
 import Contact from "./Contact";
 
-function Main() {
+function Main({ isScroll, mainRef }) {
+ 
+
   return (
-    <>
+    <main ref={mainRef}>
       <Cover />
-      <Skills />
-      <Works />
-      <Contact />
-    </>
+      <Skills isScroll={isScroll} />
+      <Works isScroll={isScroll} />
+      <Contact isScroll={isScroll} />
+    </main>
   );
 }
 

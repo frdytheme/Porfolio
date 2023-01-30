@@ -1,12 +1,12 @@
 .article_cover {
-  height: 100vh;
+  height: 70vh;
   display: flex;
   letter-spacing: 0;
   padding: 0 160px;
+  align-items: flex-end;
   .mainTitle {
     font-size: 100px;
     line-height: 1.17;
-    padding-top: 440px;
     letter-spacing: -6px;
   }
   .subTitle {
@@ -15,7 +15,6 @@
     grid-auto-rows: 1fr 1fr;
     margin-top: auto;
     margin-left: auto;
-    padding-bottom: 100px;
     p {
       font-size: 20px;
       &:first-child {
