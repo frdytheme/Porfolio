@@ -5,7 +5,7 @@ import WorksList from "./WorksList";
 import WorksView from "./WorksView";
 
 function Works() {
-  const [worksIndex, setWorksIndex] = useState(0);
+  const [worksIndex, setWorksIndex] = useState(1);
 
   return (
     <article className="article_works headline">

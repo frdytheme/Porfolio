@@ -1,8 +1,11 @@
+import { useEffect, useRef, useState } from "react";
+
 function WorksView({ data, worksIndex }) {
-  const {id, name, duration, peoples, category, description, video } = data;
+  const { id, name, duration, peoples, category, description, video } = data;
+  // console.log(name.split(""))
   return (
     <>
-      { id === worksIndex ?
+      {id === worksIndex ? (
         <aside className="worksView">
           <div className="videoFrame">
             <video src={video} autoPlay loop muted></video>
@@ -22,15 +25,17 @@ function WorksView({ data, worksIndex }) {
             </li>
             <li>
               <h4>Category</h4>
-              <p>{category}</p>
+              {category.map((use, idx) => {
+                return <p key={idx}>{use}</p>;
+              })}
             </li>
             <li>
               <h4>Description</h4>
               <p>{description}</p>
             </li>
           </ul>
-        </aside> : null
-      }
+        </aside>
+      ) : null}
     </>
   );
 }

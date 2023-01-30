@@ -23,7 +23,7 @@ function App() {
     articles.forEach((article) => {
       headLine.current = [...headLine.current, article.offsetTop];
     });
-    console.log(headLine)
+    console.log(headLine);
   };
 
   useEffect(() => {
@@ -35,7 +35,7 @@ function App() {
       window.removeEventListener("resize", getHeadLine);
       window.removeEventListener("scroll", getScroll);
     };
-  }, [isScroll]);
+  }, []);
 
   return (
     <>

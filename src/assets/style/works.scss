@@ -1,3 +1,10 @@
+@keyframes letterWave {
+  50% {
+    transform: translateY(-10px);
+    color: #fff;
+  }
+}
+
 .article_works {
   h3 {
     border-radius: 0 0 20px 20px;
@@ -19,8 +26,63 @@
         align-items: center;
         gap: 15px;
         cursor: pointer;
+        transition: 0.2s cubic-bezier(0.49, 0.06, 0.08, 1);
+        &:hover {
+          background-color: var(--color-softBlk);
+          h4 {
+            color: #fff;
+          //   span {
+          //     &:nth-child(1) {
+          //       animation: letterWave .7s ease-in-out;
+          //     }
+          //     &:nth-child(2) {
+          //       animation: letterWave .7s .1s ease-in-out;
+          //     }
+          //     &:nth-child(3) {
+          //       animation: letterWave .7s .2s ease-in-out;
+          //     }
+          //     &:nth-child(4) {
+          //       animation: letterWave .7s .3s ease-in-out;
+          //     }
+          //     &:nth-child(5) {
+          //       animation: letterWave .7s .4s ease-in-out;
+          //     }
+          //     &:nth-child(6) {
+          //       animation: letterWave .7s .5s ease-in-out;
+          //     }
+          //     &:nth-child(7) {
+          //       animation: letterWave .7s .6s ease-in-out;
+          //     }
+          //     &:nth-child(8) {
+          //       animation: letterWave .7s .7s ease-in-out;
+          //     }
+          //     &:nth-child(9) {
+          //       animation: letterWave .7s .8s ease-in-out;
+          //     }
+          //     &:nth-child(10) {
+          //       animation: letterWave .7s .9s ease-in-out;
+          //     }
+          //     &:nth-child(11) {
+          //       animation: letterWave .7s 1s ease-in-out;
+          //     }
+          //     &:nth-child(12) {
+          //       animation: letterWave .7s 1.1s ease-in-out;
+          //     }
+          //     animation-play-state: running;
+          //   }
+          }
+          .usedSkills {
+            border: 1px solid #fff;
+            background-color: var(--color-softBlk);
+            color: #fff;
+          }
+        }
         h4 {
           font-size: 32px;
+          transition: 0.2s cubic-bezier(0.49, 0.06, 0.08, 1);
+          span {
+            display: inline-block;
+          }
         }
         p {
           margin-top: 18px;
@@ -30,7 +92,7 @@
           margin-left: auto;
           padding-right: 40px;
           display: flex;
-          gap: 20px;
+          gap: 10px;
           .usedSkills {
             height: 36px;
             line-height: 36px;
@@ -40,6 +102,7 @@
             border-radius: 10px;
             padding: 0 20px;
             cursor: pointer;
+            transition: 0.2s cubic-bezier(0.49, 0.06, 0.08, 1);
           }
         }
       }
@@ -51,7 +114,7 @@
       .videoFrame {
         width: 1060px;
         height: 545px;
-        border-radius: 20px;
+        border-radius: 30px;
         overflow: hidden;
         border: 10px solid var(--color-softBlk);
         margin-bottom: 35px;
@@ -59,38 +122,38 @@
           width: 100%;
           height: 100%;
           object-fit: cover;
-          
         }
       }
       .workInfo {
         display: flex;
         width: 100%;
-        
-          li {
-            border-right: 1px solid var(--color-lightGrey);
-            padding: 0 35px;
-            align-self: center;
-            &:first-child {
-              padding-left: 0;
-            }
-            &:nth-child(3) ~ li {
-              border: none;
-            }
-            &:last-child {
-              width: 260px;
-              padding: 0;
-              margin-left: 50px;
-            }
-            h4 {
-              color: var(--color-lightGrey);
-              font-size: 20px;
-              font-weight: 700;
-              margin-bottom: 10px;
-            }
-            p {
-              font-size: 15px;
-            }
+        li {
+          border-right: 1px solid var(--color-lightGrey);
+          padding: 0 35px;
+          align-self: flex-start;
+          &:first-child {
+            padding-left: 0;
           }
+          &:nth-child(3) ~ li {
+            border: none;
+          }
+          &:last-child {
+            width: 260px;
+            padding: 0;
+            margin-left: auto;
+            padding-right: 50px;
+          }
+          h4 {
+            color: var(--color-lightGrey);
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 10px;
+          }
+          p {
+            font-size: 15px;
+            line-height: 20px;
+          }
+        }
       }
     }
   }
