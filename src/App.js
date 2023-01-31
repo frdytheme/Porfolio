@@ -3,44 +3,43 @@ import "./assets/style/style.scss";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Main from "./components/Main";
-import { useEffect, useRef, useState } from "react";
+import { useState, useEffect, useRef } from "react";
 
 function App() {
-  const [isScroll, setIsScroll] = useState(0);
-
-  const headLine = useRef([]);
-  const mainRef = useRef(null);
+  const [scrollY, setScrollY] = useState(0);
 
   const getScroll = () => {
-    const scrollY = window.scrollY;
-    setIsScroll(scrollY);
+    setScrollY(window.scrollY);
   };
 
-  const getHeadLine = () => {
-    headLine.current = [0];
-    const articles = mainRef.current.querySelectorAll(".headline");
+  const mainRef = useRef(null);
+  const getTitle = useRef([]);
+  let articles = null;
 
-    articles.forEach((article) => {
-      headLine.current = [...headLine.current, article.offsetTop];
+  const getTitleLine = () => {
+    getTitle.current = [0];
+    articles = mainRef.current.querySelectorAll(".headline");
+    articles.forEach((art) => {
+      getTitle.current = [...getTitle.current, art.offsetTop];
     });
-    console.log(headLine);
   };
 
   useEffect(() => {
-    getHeadLine();
-    window.addEventListener("resize", getHeadLine);
+    getTitleLine();
+
+    window.addEventListener("resize", getTitleLine);
     window.addEventListener("scroll", getScroll);
 
     return () => {
-      window.removeEventListener("resize", getHeadLine);
+      window.removeEventListener("resize", getTitleLine);
       window.removeEventListener("scroll", getScroll);
     };
   }, []);
 
   return (
     <>
-      <Header isScroll={isScroll} headLine={headLine.current} />
-      <Main isScroll={isScroll} mainRef={mainRef} />
+      <Header scrollY={scrollY} getTitle={getTitle} />
+      <Main mainRef={mainRef} />
       <Footer />
     </>
   );

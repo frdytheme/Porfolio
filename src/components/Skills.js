@@ -1,19 +1,16 @@
 import "../assets/style/skills.scss";
 import SkillsList from "./SkillsList";
 import skillsData from "./skillsData";
-import { useEffect, useState } from "react";
+import { useRef } from "react";
 
 function Skills() {
-  const [data, setData] = useState([]);
+  const data = useRef([]);
+  data.current = [...skillsData];
 
-  useEffect(() => {
-    setData(skillsData);
-  }, []);
   return (
-    <article className="article_skills headline">
-      <h3>Skills</h3>
-
-      {data.map((skills) => (
+    <article className="article_skills">
+      <h3 className="headline">Skills</h3>
+      {data.current.map((skills) => (
         <SkillsList key={skills.id} skills={skills} />
       ))}
     </article>

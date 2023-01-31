@@ -7,9 +7,6 @@ function WorksList({ setWorksIndex, workListData }) {
           <li className="workItem" key={id} onClick={() => setWorksIndex(id)}>
             <h4>
               {name}
-              {/* {name.split("").map((letter, idx) => {
-                return <span key={idx}>{letter}</span>;
-              })} */}
             </h4>
             <p>{peoples}</p>
             <ul>

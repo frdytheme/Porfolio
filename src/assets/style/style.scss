@@ -4,7 +4,8 @@
 :root {
   --color-lightGrey: #878787;
   --color-softBlk: #2d2d2d;
-  --transition-custom: .4s cubic-bezier(.49,.06,.08,1);
+  --transition-custom: 0.4s cubic-bezier(0.49, 0.06, 0.08, 1);
+  --bezier-custom: cubic-bezier(0.49, 0.06, 0.08, 1)
 }
 body {
   font-family: "Pretendard", sans-serif;
@@ -17,5 +18,20 @@ body {
       font-weight: 700;
     }
   }
-
+  .headline {
+    width: 430px;
+    text-align: right;
+    padding: 13px 0;
+    font-size: 70px;
+    font-weight: 700;
+    border-bottom: 1px solid #000;
+    margin-bottom: 80px;
+  }
+  footer {
+    text-align: right;
+    border-top: 1px solid var(--color-lightGrey);
+    margin: 0 160px;
+    padding: 50px 0;
+    line-height: 1.6;
+  }
 }
