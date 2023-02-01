@@ -1,0 +1,49 @@
+.article_contact {
+  .contactWrapper {
+    display: flex;
+    align-items: center;
+    gap: 150px;
+    padding-bottom: 150px;
+    .txtBox {
+      margin-left: 160px;
+      p {
+        width: 530px;
+        font-size: 16px;
+        line-height: 1.6;
+        &:nth-child(2) {
+          margin: 20px 0;
+        }
+        &:nth-child(3) {
+          margin: 20px 0;
+        }
+        strong {
+          font-size: 18px;
+          margin: 10px 0;
+          line-height: 3;
+        }
+      }
+    }
+    .contactLink {
+      display: flex;
+      font-size: 50px;
+      font-weight: 700;
+      gap: 50px;
+      li {
+        a {
+          text-align: center;
+          line-height: 250px;
+          width: 250px;
+          height: 250px;
+          background-color: #fff;
+          border-radius: 15px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+            rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+          &:hover {
+            box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+              rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+          }
+        }
+      }
+    }
+  }
+}

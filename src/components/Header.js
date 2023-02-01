@@ -1,7 +1,7 @@
 import "../assets/style/header.scss";
 import { useRef, useEffect } from "react";
 
-function Header({ scrollY, getTitle }) {
+function Header({ getTitle }) {
   const navData = [
     { id: 1, title: "skills" },
     { id: 2, title: "works" },
@@ -11,6 +11,7 @@ function Header({ scrollY, getTitle }) {
   let navLink = null;
 
   const navControl = () => {
+    const scrollY = window.scrollY;
     const header = headerRef.current;
     if (header.offsetTop - scrollY < 15) {
       header.className = "active";
@@ -31,52 +32,29 @@ function Header({ scrollY, getTitle }) {
     });
   };
 
-  const changeTitle = () => {
-    const scrollY = window.scrollY;
-    const titles = headerRef.current.querySelectorAll(".titleSlide li");
-    getTitle.current.forEach((title, idx) => {
-      if (title - scrollY < 5) {
-        titles.forEach((title) => title.classList.remove("on"));
-        titles[idx].classList.add("on");
-      }
-    });
-  };
-
   useEffect(() => {
-    navControl();
+    window.addEventListener("scroll", navControl);
     moveToTitle();
-  });
-
-  useEffect(() => {
-    window.addEventListener("scroll", changeTitle);
-    return () => window.addEventListener("scroll", changeTitle);
+    return () => {
+      window.removeEventListener("scroll", navControl);
+    };
   }, []);
 
   return (
     <header ref={headerRef}>
-      <ul className="titleSlide navBtn">
-        <li>
-          <h1>
-            Frontend Developer <br />
-            Gunho Kim
-            <em>2023</em>
-          </h1>
-        </li>
-        {navData.map((title) => (
-          <li key={title.id} className="subTitle">
-            {title.title}
-          </li>
-        ))}
-      </ul>
+      <div className="titleSlide navBtn">
+        <h1>
+          Frontend Developer Gunho Kim
+          <em>2023</em>
+        </h1>
+      </div>
 
       <ul className="navCategory">
         {navData.map((title) => {
           return (
-            <li key={title.id}>
-              <div className="navBtn">
-                <em>01</em>
-                {title.title}
-              </div>
+            <li key={title.id} className="navBtn on">
+              <em>0{title.id}</em>
+              {title.title}
             </li>
           );
         })}

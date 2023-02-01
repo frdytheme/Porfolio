@@ -5,13 +5,14 @@
   --color-lightGrey: #878787;
   --color-softBlk: #2d2d2d;
   --transition-custom: 0.4s cubic-bezier(0.49, 0.06, 0.08, 1);
-  --bezier-custom: cubic-bezier(0.49, 0.06, 0.08, 1)
+  --bezier-custom: cubic-bezier(0.49, 0.06, 0.08, 1);
 }
 body {
   font-family: "Pretendard", sans-serif;
   font-size: 16px;
   color: var(--color-softBlk);
   letter-spacing: -1px;
+  overflow-x: hidden;
   p {
     font-weight: 500;
     &.boldTxt {

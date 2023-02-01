@@ -12,9 +12,11 @@ function Works() {
       <h3 className="headline">Works</h3>
       <div className="worksBox">
         <WorksList workListData={workListData} setWorksIndex={setWorksIndex} />
-        {workListData.map((data) => (
-          worksIndex === data.id ? <WorksView data={data} key={data.id} worksIndex={worksIndex} /> : null
-        ))}
+        {workListData.map((data) =>
+          worksIndex === data.id ? (
+            <WorksView data={data} key={data.id} worksIndex={worksIndex} />
+          ) : null
+        )}
       </div>
     </article>
   );
