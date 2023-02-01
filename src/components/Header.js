@@ -1,5 +1,5 @@
 import "../assets/style/header.scss";
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
 
 function Header({ getTitle }) {
   const navData = [
@@ -40,6 +40,8 @@ function Header({ getTitle }) {
     };
   }, []);
 
+  const [gnb, setGnb] = useState(false);
+
   return (
     <header ref={headerRef}>
       <div className="titleSlide navBtn">
@@ -52,13 +54,27 @@ function Header({ getTitle }) {
       <ul className="navCategory">
         {navData.map((title) => {
           return (
-            <li key={title.id} className="navBtn on">
+            <li key={title.id} className="navBtn">
               <em>0{title.id}</em>
               {title.title}
             </li>
           );
         })}
       </ul>
+
+      <div className={`mobileMenu ${gnb ? "on" : ""}`} onClick={()=>setGnb(!gnb)}>
+        <div className="GnbBtn">open&close buttton</div>
+        <ul className="mobileGnb">
+          {navData.map((title) => {
+            return (
+              <li key={title.id} className="navBtn">
+                <em>0{title.id}</em>
+                {title.title}
+              </li>
+            );
+          })}
+        </ul>
+      </div>
     </header>
   );
 }

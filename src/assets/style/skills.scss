@@ -1,22 +1,22 @@
 .article_skills {
-  margin: 215px 0 215px;
+  margin: 11.2vw 0 11.2vw;
   .skillsList {
     display: flex;
     justify-content: flex-end;
     h4 {
-      width: 280px;
-      font-size: 40px;
+      width: 14.6vw;
+      font-size: 2vw;
       position: relative;
-      padding-right: 130px;
-      margin-top: 50px;
+      padding-right: 6.8vw;
+      margin-top: 2.6vw;
       &::before {
         content: "";
         position: absolute;
-        width: 8.5px;
-        height: 37px;
+        width: 0.4vw;
+        height: 2vw;
         background-color: #878787;
         border-radius: 9px 0 0 9px;
-        left: -35px;
+        left: -1.8vw;
       }
     }
     &:nth-of-type(1) h4::before {
@@ -24,10 +24,10 @@
     }
     &:nth-of-type(2) h4::after {
       content: "(ES6+)";
-      font-size: 18px;
+      font-size: .9vw;
       font-weight: 500;
       color: #878787;
-      margin-left: 15px;
+      margin-left: 0.8vw;
     }
     &:nth-of-type(2) h4::before {
       background-color: #EDE862;
@@ -42,13 +42,13 @@
       background-color: #F27370;
     }
     ul {
-      width: 835px;
+      width: 43.5vw;
       list-style: disc;
       border-bottom: 1px solid #878787;
-      padding: 50px 0 50px 30px;
+      padding: 2.6vw 0 2.6vw 1.6vw;
       li {
         font-weight: 500;
-        margin-bottom: 23px;
+        margin-bottom: 1.2vw;
         &::marker {
           color: #878787;
         }

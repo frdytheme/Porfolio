@@ -1,6 +1,9 @@
 // Pretendard font.css
 @import url(./font.css);
 
+$mobile : 430px;
+
+
 :root {
   --color-lightGrey: #878787;
   --color-softBlk: #2d2d2d;
@@ -9,7 +12,7 @@
 }
 body {
   font-family: "Pretendard", sans-serif;
-  font-size: 16px;
+  font-size: 0.833vw;
   color: var(--color-softBlk);
   letter-spacing: -1px;
   overflow-x: hidden;
@@ -20,10 +23,10 @@ body {
     }
   }
   .headline {
-    width: 430px;
+    width: 22.4vw;
     text-align: right;
-    padding: 13px 0;
-    font-size: 70px;
+    padding: 0.7vw 0;
+    font-size: 3.6vw;
     font-weight: 700;
     border-bottom: 1px solid #000;
     margin-bottom: 80px;
@@ -31,8 +34,8 @@ body {
   footer {
     text-align: right;
     border-top: 1px solid var(--color-lightGrey);
-    margin: 0 160px;
-    padding: 50px 0;
+    margin: 0 8.333vw;
+    padding: 2.6vw 0;
     line-height: 1.6;
   }
 }

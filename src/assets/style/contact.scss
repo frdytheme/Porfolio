@@ -2,45 +2,43 @@
   .contactWrapper {
     display: flex;
     align-items: center;
-    gap: 150px;
-    padding-bottom: 150px;
+    gap: 7.8vw;
+    padding-bottom: 7.8vw;
     .txtBox {
-      margin-left: 160px;
+      margin-left: 8.333vw;
       p {
-        width: 530px;
-        font-size: 16px;
+        width: 27.6vw;
+        font-size: 0.833vw;
         line-height: 1.6;
         &:nth-child(2) {
-          margin: 20px 0;
+          margin: 1vw 0;
         }
         &:nth-child(3) {
-          margin: 20px 0;
+          margin: 1vw 0;
         }
         strong {
-          font-size: 18px;
-          margin: 10px 0;
+          font-size: 0.9vw;
+          margin: 0.5vw 0;
           line-height: 3;
         }
       }
     }
     .contactLink {
       display: flex;
-      font-size: 50px;
+      font-size: 2.6vw;
       font-weight: 700;
-      gap: 50px;
+      gap: 2.6vw;
       li {
         a {
           text-align: center;
-          line-height: 250px;
-          width: 250px;
-          height: 250px;
+          line-height: 13vw;
+          width: 13vw;
+          height: 13vw;
           background-color: #fff;
           border-radius: 15px;
-          box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
-            rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
           &:hover {
-            box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
-              rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+            box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
           }
         }
       }

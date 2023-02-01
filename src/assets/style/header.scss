@@ -2,7 +2,7 @@ header {
   position: sticky;
   top: 0;
   width: 100%;
-  margin: 70px auto 0;
+  margin: 3.6vw auto 0;
   display: flex;
   justify-content: space-between;
   transition: var(--transition-custom);
@@ -11,77 +11,78 @@ header {
   .titleSlide {
     overflow: hidden;
     h1 {
-      width: 300px;
+      width: 15.6vw;
       transition: 0.6s var(--bezier-custom);
-      font-size: 32px;
+      font-size: 1.7vw;
       font-weight: 600;
-      padding-left: 160px;
+      padding-left: 8.333vw;
       cursor: pointer;
       position: relative;
       transition: 0.5s var(--bezier-custom);
       em {
         display: block;
-        font-size: 14px;
+        font-size: 0.7vw;
         font-weight: 500;
-        margin-top: 10px;
+        margin-top: 0.5vw;
         color: var(--color-lightGrey);
       }
       &::after {
         content: "Portfolio";
         position: absolute;
-        font-size: 50px;
+        font-size: 2.6vw;
         font-weight: 700;
-        line-height: 88px;
+        line-height: 4.6vw;
         top: 100%;
         letter-spacing: -1px;
         color: var(--color-softBlk);
       }
       &:hover::after {
-        color: #90A17D;
+        color: #90a17d;
       }
     }
-    .subTitle {
-      font-size: 70px;
-      font-weight: 700;
-      text-transform: capitalize;
-      text-align: right;
-      position: absolute;
-      top: 100%;
-      right: 0;
-    }
+    // .subTitle {
+    //   font-size: 3.6vw;
+    //   font-weight: 700;
+    //   text-transform: capitalize;
+    //   text-align: right;
+    //   position: absolute;
+    //   top: 100%;
+    //   right: 0;
+    // }
   }
   .navCategory {
-    width: 385px;
+    width: 20vw;
     display: flex;
-    padding-right: 160px;
+    padding-right: 8.333vw;
     position: absolute;
     top: 0;
     right: 0;
     transition: var(--transition-custom);
     .navBtn {
-      height: 40px;
-      margin-right: 20px;
-      padding: 0 15px;
+      font-size: 0.833vw;
+      height: 2.1vw;
+      margin-right: 1vw;
+      padding: 0 0.8vw;
       font-weight: 600;
       text-transform: uppercase;
-      line-height: 40px;
+      line-height: 2.1vw;
       cursor: pointer;
       position: relative;
-      border-radius: 20px;
+      border-radius: 1vw;
       &:last-child {
         margin-right: 0;
       }
       &:hover {
-        background-color: #90A17D;
+        background-color: #90a17d;
         color: #000;
         em {
-          color: #FFE1E1;
+          color: #ffe1e1;
         }
       }
       em {
-        font-size: 14px;
+        font-size: 0.7vw;
         font-weight: 300;
-        padding-right: 15px;
+        padding-right: 0.8vw;
         color: var(--color-lightGrey);
       }
     }
@@ -89,7 +90,7 @@ header {
   &.active {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 20px;
     background-color: #fff;
-    border-radius: 0 0 30px 30px;
+    border-radius: 0 0 1.5vw 1.5vw;
     .titleSlide {
       h1 {
         transform: translateY(-100%);
@@ -99,10 +100,13 @@ header {
       top: 50%;
       transform: translateY(-50%);
       .navBtn {
-        height: 88px;
-        line-height: 88px;
+        height: 4.6vw;
+        line-height: 4.6vw;
         border-radius: 0;
       }
     }
+  }
+  .mobileMenu {
+    display: none;
   }
 }

@@ -3,17 +3,6 @@ import { useEffect, useRef } from "react";
 function WorksView({ data }) {
   const { name, duration, peoples, category, description, video } = data;
 
-  // const random360 = Math.trunc(Math.random() * 361);
-  // const randomRGB = Math.trunc(Math.random() * 256);
-  // const randomRGB2 = Math.trunc(Math.random() * 257);
-  // const randomRGB3 = Math.trunc(Math.random() * 258);
-  // const randomRGB4 = Math.trunc(Math.random() * 255);
-  // const randomRGB5 = Math.trunc(Math.random() * 254);
-  // const randomRGB6 = Math.trunc(Math.random() * 253);
-  // const randomGradient = {
-  //   backgroundImage: `linear-gradient(${random360}deg, rgb(${randomRGB},${randomRGB2},${randomRGB3}), rgb(${randomRGB4},${randomRGB5},${randomRGB6}))`,
-  // };
-
   const viewRef = useRef(null);
   const videoRef = useRef(null);
 
