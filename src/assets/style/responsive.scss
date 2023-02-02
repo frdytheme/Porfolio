@@ -1,6 +1,11 @@
 @media all and (min-width: 320px) and (max-width: 768px) {
   html {
     body {
+      .headline {
+        width: 30vw;
+        font-size: 32px;
+        padding: 3vw 0;
+      }
       header {
         height: 50px;
         .titleSlide {
@@ -18,8 +23,45 @@
             }
           }
         }
+        &.active .navCategory {
+          top: 100%;
+          transform: none;
+          .navBtn {
+            height: 50px;
+            line-height: 50px;
+          }
+        }
         .navCategory {
           display: none;
+          position: absolute;
+          top: 100%;
+          width: 100%;
+          flex-flow: column;
+          padding-right: 0;
+          .navBtn {
+            width: 100%;
+            height: 50px;
+            background-color: #fff;
+            // border-bottom: 1px solid #000;
+            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+            border-bottom: 1px solid transparent;
+            border-image: linear-gradient(
+              to right,
+              var(--color-lightGrey),
+              transparent 75%
+            );
+            border-image-slice: 1;
+            font-size: 20px;
+            line-height: 50px;
+            text-transform: capitalize;
+            cursor: pointer;
+            border-radius: 0;
+            padding: 0;
+            em {
+              font-size: 12px;
+              margin: 0 20px;
+            }
+          }
         }
         .mobileMenu {
           display: block;
@@ -33,9 +75,9 @@
           &::after {
             content: "";
             width: 100%;
-            height: 6px;
+            height: 5px;
             background-color: var(--color-softBlk);
-            border-radius: 5px;
+            border-radius: 1.5vw;
             position: absolute;
             left: 0;
             top: 50%;
@@ -51,9 +93,9 @@
             &::after {
               content: "";
               width: 100%;
-              height: 6px;
+              height: 5px;
               background-color: var(--color-softBlk);
-              border-radius: 5px;
+              border-radius: 1.5vw;
               position: absolute;
               left: 0;
               bottom: 0;
@@ -61,29 +103,230 @@
             &::before {
               content: "";
               width: 100%;
-              height: 6px;
+              height: 5px;
               background-color: var(--color-softBlk);
-              border-radius: 5px;
+              border-radius: 1.5vw;
               position: absolute;
               left: 0;
               top: 0;
             }
           }
-          &.on .GnbBtn::after {
-            display: none;
+          &.on {
+            .GnbBtn::after {
+              display: none;
+            }
+            .GnbBtn::before {
+              display: none;
+            }
+            .btn {
+              text-indent: -9999px;
+            }
           }
-          &.on .GnbBtn::before {
-            display: none;
+          &.on + .navCategory {
+            display: block;
           }
-          .btn {
-            text-indent: -9999px;
+        }
+      }
+      .article_cover {
+        padding: 0;
+        flex-flow: column;
+        align-items: flex-start;
+        .mainTitle {
+          font-size: 9.5vw;
+          padding: 40vw 8vw 0;
+        }
+        .subTitle {
+          margin: 23vw auto;
+          align-items: center;
+          p {
+            font-size: 3.095vw;
+            &:first-child {
+              font-size: 7.619vw;
+            }
+            &:nth-child(2),
+            &:nth-child(3) {
+              margin: 15px 0;
+            }
           }
-          .mobileGnb {
-            display: none;
-            .navBtn {
-              font-size: 16px;
+        }
+      }
+      .article_skills {
+        .skillsList {
+          padding: 0 2.6vw;
+          flex-flow: column;
+          justify-content: center;
+          align-items: center;
+          margin-top: 60px;
+          h4 {
+            width: 100%;
+            margin-left: 100px;
+            padding-right: 0;
+            font-size: 32px;
+            &::before {
+              content: "";
+              position: absolute;
+              width: 7px;
+              height: 30px;
+              background-color: #878787;
+              border-radius: 9px 0 0 9px;
+              left: -20px;
+            }
+          }
+          ul {
+            width: 100%;
+            font-size: 14px;
+            padding: 50px 0 80px 18.7vw;
+            border-bottom: 1px solid transparent;
+            border-image: linear-gradient(
+              to right,
+              var(--color-lightGrey),
+              transparent 75%
+            );
+            border-image-slice: 1;
+            li {
+              width: 80%;
+              line-height: 1.6;
+              margin-bottom: 10px;
+            }
+          }
+        }
+      }
+      .article_works {
+        color: #fff;
+        background-color: #000;
+        margin-top: 150px;
+        padding: 31vw 0 0;
+        border-radius: 50px 50px 0 0;
+        .halfCircle {
+          text-indent: -9999px;
+          background-color: #fff;
+          width: 100%;
+          height: 62.5vw;
+          border-radius: 62.5vw 62.5vw 0 0;
+          position: relative;
+          bottom: -16vw;
+          margin-top: 70px;
+        }
+        .headline {
+          font-size: 25vw;
+          text-align: center;
+          margin-bottom: 30px;
+          color: #fff;
+          padding-bottom: 60px;
+          border-bottom: 1px solid #ca8a8b;
+          width: 100%;
+        }
+        .worksList_mobile {
+          display: flex;
+          flex-flow: column;
+          align-items: center;
+          padding: 0 4.5vw;
+          & > li {
+            padding: 50px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.322);
+            position: relative;
+            p {
+              font-size: 4.3vw;
+              display: flex;
+              align-items: center;
+              padding: 0 3.5vw;
               em {
-                font-size: 10px;
+                font-size: 2vw;
+                margin-left: 15px;
+              }
+              span {
+                font-size: 2vw;
+                color: var(--color-lightGrey);
+                margin-left: auto;
+              }
+            }
+            .imgBox {
+              width: 100%;
+              border-radius: 4.5vw;
+              overflow: hidden;
+              margin: 20px auto;
+              img {
+                width: 100%;
+                object-fit: cover;
+              }
+            }
+            ul {
+              display: flex;
+              align-items: center;
+              justify-content: flex-start;
+              li {
+                font-size: 3vw;
+                border: 1px solid #fff;
+                padding: 2.5vw 4.5vw;
+                border-radius: 1.5vw;
+                margin: 0 1.5vw;
+              }
+            }
+            a {
+              background-color: #fff;
+              color: var(--color-softBlk);
+              width: 130px;
+              height: 40px;
+              line-height: 40px;
+              text-align: center;
+              font-size: 14px;
+              margin: 30px auto;
+              border-radius: 8px;
+              font-weight: 700;
+              text-transform: uppercase;
+            }
+          }
+        }
+      }
+      .article_contact {
+        width: 100%;
+        .headline {
+          font-size: 10vw;
+          text-align: center;
+          padding: 0;
+          margin-bottom: 100px;
+          width: 100%;
+          border-bottom: none;
+          position: relative;
+          &::after {
+            content: "";
+            position: absolute;
+            width: 10vw;
+            height: 3px;
+            background-color: #000;
+            left: 50%;
+            bottom: -50px;
+            transform: translateX(-50%);
+          }
+        }
+        .contactWrapper {
+          flex-flow: column;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+          padding: 0 4vw;
+          .txtBox {
+            text-align: center;
+            margin-left: 0;
+            width: 100%;
+            p {
+              width: 100%;
+              font-size: 2.7vw;
+              strong {
+                font-size: 3vw;
+              }
+            }
+          }
+          .contactLink {
+            gap: 5vw;
+            margin-bottom: 20vw;
+            li {
+              a {
+                font-size: 4vw;
+                width: 18vw;
+                height: 18vw;
+                line-height: 18vw;
+                border-radius: 50%;
               }
             }
           }

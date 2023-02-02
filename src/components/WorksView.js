@@ -14,20 +14,17 @@ function WorksView({ data }) {
     cursor.style.top = mouseY - cursor.offsetHeight / 2 + "px";
 
     const framePos = videoRef.current.getBoundingClientRect();
-    const frameLeft = framePos.x;
     const frameTop = framePos.y + window.scrollY;
-    const frameWidth = framePos.width;
-    const frameHeight = framePos.height;
 
     if (
-      frameLeft < mouseX &&
-      mouseX < frameLeft + frameWidth &&
+      framePos.x < mouseX &&
+      mouseX < framePos.x + framePos.width &&
       frameTop < mouseY &&
-      mouseY < frameTop + frameHeight
+      mouseY < frameTop + framePos.height
     ) {
       viewRef.current.classList.add("on");
     } else {
-      e.target.classList.remove("on");
+      viewRef.current.classList.remove("on");
     }
   };
 

@@ -37,21 +37,12 @@ header {
         color: var(--color-softBlk);
       }
       &:hover::after {
-        color: #90a17d;
+        color: #E99B9B;
       }
     }
-    // .subTitle {
-    //   font-size: 3.6vw;
-    //   font-weight: 700;
-    //   text-transform: capitalize;
-    //   text-align: right;
-    //   position: absolute;
-    //   top: 100%;
-    //   right: 0;
-    // }
   }
   .navCategory {
-    width: 20vw;
+    // width: 20vw;
     display: flex;
     padding-right: 8.333vw;
     position: absolute;
@@ -59,7 +50,7 @@ header {
     right: 0;
     transition: var(--transition-custom);
     .navBtn {
-      font-size: 0.833vw;
+      font-size: 16px;
       height: 2.1vw;
       margin-right: 1vw;
       padding: 0 0.8vw;
@@ -73,10 +64,10 @@ header {
         margin-right: 0;
       }
       &:hover {
-        background-color: #90a17d;
-        color: #000;
+        background-color: #302939;
+        color: #E99B9B;
         em {
-          color: #ffe1e1;
+          color: #E99B9B;
         }
       }
       em {
@@ -100,13 +91,16 @@ header {
       top: 50%;
       transform: translateY(-50%);
       .navBtn {
-        height: 4.6vw;
-        line-height: 4.6vw;
-        border-radius: 0;
+        // height: 4.6vw;
+        // line-height: 4.6vw;
+        // border-radius: 0;
       }
     }
   }
   .mobileMenu {
+    display: none;
+  }
+  .mobileGnb {
     display: none;
   }
 }

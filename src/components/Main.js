@@ -3,17 +3,18 @@ import Skills from "./Skills";
 import Works from "./Works";
 import Contact from "./Contact";
 import { useMediaQuery } from "react-responsive";
+import WorksMobile from "./WorksMobile";
 
 function Main({ mainRef }) {
   const isMobile = useMediaQuery({
-    query: "(min-width:320px) and (max-width:768px)",
+    query: "(max-width:768px)",
   });
 
   return (
     <main ref={mainRef}>
       <Cover />
       <Skills />
-      {isMobile || <Works />}
+      {isMobile ? <WorksMobile /> : <Works />}
       <Contact />
     </main>
   );
