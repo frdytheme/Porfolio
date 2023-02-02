@@ -62,7 +62,9 @@ function WorksView({ data }) {
           </li>
           <li>
             <h4>Description</h4>
-            <p>{description}</p>
+            {description.split("/").map((string, idx) => {
+              return <p key={idx}>{string}</p>;
+            })}
           </li>
         </ul>
         <div className="viewMore" ref={viewRef}>

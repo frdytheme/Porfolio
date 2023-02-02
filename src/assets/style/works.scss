@@ -97,10 +97,17 @@
             border: none;
           }
           &:last-child {
-            width: 13.5vw;
             padding: 0;
             margin-left: auto;
-            padding-right: 2.6vw;
+            padding-right: 2vw;
+            h4 {
+              color: #E99B9B;
+              font-size: 1.2vw;
+            }
+            p {
+              font-size: 1vw;
+              line-height: 1.6;
+            }
           }
           h4 {
             color: var(--color-lightGrey);
@@ -109,7 +116,7 @@
             margin-bottom: 0.5vw;
           }
           p {
-            font-size: 16px;
+            font-size: 0.8vw;
             line-height: 1.2vw;
           }
         }

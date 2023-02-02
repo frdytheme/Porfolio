@@ -7,8 +7,7 @@
     .txtBox {
       margin-left: 8.333vw;
       p {
-        // width: 27.6vw;
-        font-size: 16px;
+        font-size: .833vw;
         line-height: 1.6;
         &:nth-child(2) {
           margin: 1vw 0;
@@ -17,7 +16,7 @@
           margin: 1vw 0;
         }
         strong {
-          font-size: 20px;
+          font-size: 1vw;
           margin: 0.5vw 0;
           line-height: 3;
         }
