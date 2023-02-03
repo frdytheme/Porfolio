@@ -15,7 +15,6 @@ function Skills() {
     skillsLists.forEach(list => {
     })
 
-    // console.log(skillsLists);
   };
   useEffect(() => {
     window.addEventListener("scroll", showSkills);
