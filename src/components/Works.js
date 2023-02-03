@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "../assets/style/works.scss";
-import workListData from "./workListData";
+import workListData from "../assets/data/workListData";
 import WorksList from "./WorksList";
 import WorksView from "./WorksView";
 

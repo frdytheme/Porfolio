@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 
 function WorksView({ data }) {
-  const { name, duration, peoples, category, description, video, detail } = data;
+  const { name, duration, peoples, category, description, video, page } = data;
 
   const viewRef = useRef(null);
   const videoRef = useRef(null);
@@ -39,7 +39,7 @@ function WorksView({ data }) {
   return (
     <>
       <aside className="worksView">
-        <Link className="videoFrame" ref={videoRef} to={detail}>
+        <Link className="videoFrame" ref={videoRef} to={page}>
           <video src={video} autoPlay loop muted></video>
         </Link>
         <ul className="workInfo">

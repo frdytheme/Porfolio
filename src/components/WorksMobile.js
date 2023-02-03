@@ -1,5 +1,5 @@
 import "../assets/style/works.scss";
-import workListData from "./workListData";
+import workListData from "../assets/data/workListData";
 import { Link } from "react-router-dom";
 
 function WorksMobile() {

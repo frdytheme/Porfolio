@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import {} from "react-router-dom";
 import "../assets/style/contact.scss";
 
 function Contact() {
@@ -32,13 +32,28 @@ function Contact() {
         </div>
         <ul className="contactLink">
           <li>
-            <Link>Email</Link>
+            <a
+              href="mailto:rbfridayy@gmail.com"
+              target="_blank"
+              rel="noreferrer">
+              Email
+            </a>
           </li>
           <li>
-            <Link>Github</Link>
+            <a
+              href="https://github.com/frdytheme"
+              target="_blank"
+              rel="noreferrer">
+              Github
+            </a>
           </li>
           <li>
-            <Link>Blog</Link>
+            <a
+              href="https://frdytheme.tistory.com/"
+              target="_blank"
+              rel="noreferrer">
+              Blog
+            </a>
           </li>
         </ul>
       </div>

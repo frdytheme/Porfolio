@@ -1,6 +1,6 @@
-import yanoljaLive from "../assets/video/yanoljaLive.mp4";
-import hotelManoah from "../assets/video/hotelManoah.mp4";
-import yanoljaESG from "../assets/images/Yanolja_ESG_img_Mobile.png";
+import yanoljaLive from "../video/yanoljaLive.mp4";
+import hotelManoah from "../video/hotelManoah.mp4";
+import yanoljaESG from "../images/Yanolja_ESG_img_Mobile.png";
 
 export const workListData = [
   {
@@ -13,7 +13,7 @@ export const workListData = [
       "팀 프로젝트로 진행한 야놀자 홈페이지 클론 코딩. / ESG페이지 , 로딩 애니메이션 , 푸터 등 작업.",
     video: yanoljaLive,
     img: yanoljaESG,
-    detail: "/yanolja"
+    page: "/yanolja",
   },
   {
     id: 2,
@@ -25,7 +25,7 @@ export const workListData = [
       "팀 프로젝트로 진행한 야놀자 홈페이지 클론 코딩. / ESG페이지, 로딩 애니메이션, 푸터 등 작업.",
     video: yanoljaLive,
     img: "#",
-    detail: "/yanolja"
+    page: "/project2",
   },
   {
     id: 3,
@@ -37,7 +37,7 @@ export const workListData = [
       "팀 프로젝트로 진행한 야놀자 홈페이지 클론 코딩. / ESG페이지 로딩 애니메이션 푸터 등 작업.",
     video: yanoljaLive,
     img: yanoljaESG,
-    detail: "/yanolja"
+    page: "/project3",
   },
   {
     id: 4,
@@ -49,7 +49,7 @@ export const workListData = [
       "cafe24에 있는 호텔 마노아 페이지 REACT로 클론 코딩 / REACT 첫 작업",
     video: hotelManoah,
     img: "#",
-    detail: "/yanolja"
+    page: "/project4",
   },
   {
     id: 5,
@@ -60,7 +60,7 @@ export const workListData = [
     description: "프로젝트 예시 5",
     video: "#",
     img: "#",
-    detail: "/yanolja"
+    page: "/project5",
   },
   {
     id: 6,
@@ -71,7 +71,7 @@ export const workListData = [
     description: "프로젝트 예시 6",
     video: "#",
     img: "#",
-    detail: "/yanolja"
+    page: "/project6",
   },
 ];
 

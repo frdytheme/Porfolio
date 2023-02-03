@@ -39,7 +39,7 @@ Figma
 
 */
 
-export default [
+export const skillsData = [
   {
     id: 1,
     title: "HTML5 & CSS3",
@@ -58,8 +58,14 @@ export default [
     skill: [
       { no: 1, list: "자바스크립트 ES6+ 문법 이해 " },
       { no: 2, list: "Map과 ForEach를 활용해 반복되는 코드 단축" },
-      { no: 3, list: "Filter, Find, indexOf 배열 메서드를 활용해 데이터 검색 함수 작성" },
-      { no: 4, list: "콜백함수, setTimeout, setInterval, Promise, async & await 비동기 함수 이해 및 활용" },
+      {
+        no: 3,
+        list: "Filter, Find, indexOf 배열 메서드를 활용해 데이터 검색 함수 작성",
+      },
+      {
+        no: 4,
+        list: "콜백함수, setTimeout, setInterval, Promise, async & await 비동기 함수 이해 및 활용",
+      },
       { no: 5, list: "fetch API, axios 라이버리를 활용한 외부 데이터 통신" },
     ],
   },
@@ -91,9 +97,17 @@ export default [
     id: 5,
     title: "GRAPHIC",
     skill: [
-      { no: 1, list: "Photoshop, Figma, Illustrator로 UI / UX 프로토타입 제작" },
-      { no: 2, list: "Photoshop, Figma, Illustrator 활용 이미지 콘텐츠 제작 및 편집" },
+      {
+        no: 1,
+        list: "Photoshop, Figma, Illustrator로 UI / UX 프로토타입 제작",
+      },
+      {
+        no: 2,
+        list: "Photoshop, Figma, Illustrator 활용 이미지 콘텐츠 제작 및 편집",
+      },
       { no: 3, list: "Premier Pro, After Effect를 활용한 영상 편집" },
     ],
   },
 ];
+
+export default skillsData;
