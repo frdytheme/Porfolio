@@ -1,3 +1,38 @@
+@keyframes selected {
+  100% {
+    transform: scale(1.15);
+  }
+}
+
+@media all and (min-width: 1440px) {
+  .navCategory {
+    .navBtn {
+      &:hover {
+        transform: translateY(-10px);
+        span {
+          color: #ee6983;
+        }
+      }
+      &.active {
+        color: #ee6983;
+        span {
+          display: inline-block;
+          animation: selected 1s infinite alternate ease-in-out;
+        }
+        em {
+          color: #000;
+          font-weight: 600;
+        }
+      }
+      em {
+        font-size: 0.7vw;
+        font-weight: 300;
+        color: var(--color-lightGrey);
+      }
+    }
+  }
+}
+
 header {
   position: sticky;
   top: 0;
@@ -37,44 +72,32 @@ header {
         color: var(--color-softBlk);
       }
       &:hover::after {
-        color: #E99B9B;
+        color: #e99b9b;
       }
     }
   }
   .navCategory {
-    // width: 20vw;
     display: flex;
     padding-right: 8.333vw;
     position: absolute;
-    top: 0;
     right: 0;
     transition: var(--transition-custom);
     .navBtn {
+      display: flex;
+      align-items: center;
+      gap: 0.8vw;
       font-size: 16px;
-      height: 2.1vw;
-      margin-right: 1vw;
-      padding: 0 0.8vw;
+      overflow: hidden;
+      margin: 0 1vw;
+      padding: 0 0.5vw;
       font-weight: 600;
       text-transform: uppercase;
       line-height: 2.1vw;
       cursor: pointer;
       position: relative;
-      border-radius: 1vw;
+      transition: var(--transition-custom);
       &:last-child {
         margin-right: 0;
-      }
-      &:hover {
-        background-color: #302939;
-        color: #E99B9B;
-        em {
-          color: #E99B9B;
-        }
-      }
-      em {
-        font-size: 0.7vw;
-        font-weight: 300;
-        padding-right: 0.8vw;
-        color: var(--color-lightGrey);
       }
     }
   }
@@ -90,11 +113,6 @@ header {
     .navCategory {
       top: 50%;
       transform: translateY(-50%);
-      .navBtn {
-        // height: 4.6vw;
-        // line-height: 4.6vw;
-        // border-radius: 0;
-      }
     }
   }
   .mobileMenu {

@@ -1,12 +1,29 @@
-import "../assets/style/cover.scss"
+import { useEffect, useRef } from "react";
+import "../assets/style/cover.scss";
 
 function Cover() {
+  const coverRef = useRef(null);
+
+  const showTitle = () => {
+    const title = coverRef.current.querySelectorAll(".mainTitle p");
+
+    title.forEach((title, idx) => {
+      setTimeout(() => {
+        title.classList.add("show");
+      }, idx * 300);
+    });
+  };
+
+  useEffect(() => {
+    showTitle();
+  }, []);
+
   return (
-    <article className="article_cover">
+    <article className="article_cover" ref={coverRef}>
       <div className="mainTitle">
-        <p>안녕하세요</p>
-        <p className="boldTxt">배움에 게으르지 않은</p>
-        <p>김건호입니다.</p>
+          <p>안녕하세요</p>
+          <p className="boldTxt">배움에 게으르지 않은</p>
+          <p>김건호입니다.</p>
       </div>
       <div className="subTitle">
         <p>{`{`}</p>

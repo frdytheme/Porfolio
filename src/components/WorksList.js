@@ -8,10 +8,9 @@ function WorksList({ setWorksIndex, workListData }) {
     list.forEach((item) => {
       item.addEventListener("click", (e) => {
         list.forEach((item) => item.classList.remove("checked"));
-        e.target.classList.add("checked");
+        e.currentTarget.classList.add("checked");
       });
     });
-    console.log(list);
   };
 
   useEffect(() => {

@@ -1,7 +1,8 @@
 import { useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 
 function WorksView({ data }) {
-  const { name, duration, peoples, category, description, video } = data;
+  const { name, duration, peoples, category, description, video, detail } = data;
 
   const viewRef = useRef(null);
   const videoRef = useRef(null);
@@ -10,8 +11,8 @@ function WorksView({ data }) {
     const cursor = viewRef.current;
     const mouseX = e.pageX;
     const mouseY = e.pageY;
-    cursor.style.left = mouseX - cursor.offsetWidth / 2 + "px";
-    cursor.style.top = mouseY - cursor.offsetHeight / 2 + "px";
+    cursor.style.left = mouseX + "px";
+    cursor.style.top = mouseY + "px";
 
     const framePos = videoRef.current.getBoundingClientRect();
     const frameTop = framePos.y + window.scrollY;
@@ -38,9 +39,9 @@ function WorksView({ data }) {
   return (
     <>
       <aside className="worksView">
-        <div className="videoFrame" ref={videoRef}>
+        <Link className="videoFrame" ref={videoRef} to={detail}>
           <video src={video} autoPlay loop muted></video>
-        </div>
+        </Link>
         <ul className="workInfo">
           <li>
             <h4>Project Name</h4>

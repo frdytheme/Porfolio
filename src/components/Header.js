@@ -1,39 +1,51 @@
 import "../assets/style/header.scss";
 import { useRef, useEffect, useState } from "react";
 
-function Header({ getTitle }) {
+function Header({ getTitle, mainRef }) {
   const navData = [
     { id: 1, title: "skills" },
     { id: 2, title: "works" },
     { id: 3, title: "contact" },
   ];
   const headerRef = useRef(null);
+    const [gnb, setGnb] = useState(false);
 
   const navControl = () => {
     const scrollY = window.scrollY;
     const header = headerRef.current;
+
     if (header.offsetTop - scrollY < 15) {
       header.className = "active";
     } else {
       header.className = "";
     }
+
+    const navBtns = header.querySelectorAll(".navBtn");
+    const headLines = mainRef.current.querySelectorAll(".headline");
+    navBtns.forEach((btn, idx) => {
+      if (headLines[idx].className === "headline over") {
+        btn.classList.add("active");
+      } else {
+        btn.classList.remove("active");
+      }
+    });
   };
 
   const moveToTitle = (idx) => {
+    const headerHeight = headerRef.current.clientHeight;
     window.scrollTo({
-      top: getTitle.current[idx],
+      top: getTitle.current[idx] - headerHeight,
       behavior: "smooth",
     });
   };
 
   useEffect(() => {
+    navControl();
     window.addEventListener("scroll", navControl);
     return () => {
       window.removeEventListener("scroll", navControl);
     };
   }, []);
-
-  const [gnb, setGnb] = useState(false);
 
   return (
     <header ref={headerRef}>
@@ -58,7 +70,7 @@ function Header({ getTitle }) {
               className="navBtn"
               onClick={() => moveToTitle(title.id)}>
               <em>0{title.id}</em>
-              {title.title}
+              <span>{title.title}</span>
             </li>
           );
         })}

@@ -5,6 +5,7 @@ import Contact from "./Contact";
 import { useMediaQuery } from "react-responsive";
 import WorksMobile from "./WorksMobile";
 
+
 function Main({ mainRef }) {
   const isMobile = useMediaQuery({
     query: "(max-width:768px)",
@@ -16,6 +17,7 @@ function Main({ mainRef }) {
       <Skills />
       {isMobile ? <WorksMobile /> : <Works />}
       <Contact />
+
     </main>
   );
 }

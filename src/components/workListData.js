@@ -1,17 +1,19 @@
 import yanoljaLive from "../assets/video/yanoljaLive.mp4";
-import hotelManoah from "../assets/video/hotelManoah.mp4"
-import yanoljaESG from "../assets/images/Yanolja_ESG_img_Mobile.png"
+import hotelManoah from "../assets/video/hotelManoah.mp4";
+import yanoljaESG from "../assets/images/Yanolja_ESG_img_Mobile.png";
 
-export default [
+export const workListData = [
   {
     id: 1,
     name: "자바스크립트 코딩 ex1",
     duration: "7days",
     peoples: "팀프로젝트",
     category: ["HTML5", "CSS3", "JAVASCRIPT"],
-    description: "팀 프로젝트로 진행한 야놀자 홈페이지 클론 코딩. / ESG페이지 , 로딩 애니메이션 , 푸터 등 작업.",
+    description:
+      "팀 프로젝트로 진행한 야놀자 홈페이지 클론 코딩. / ESG페이지 , 로딩 애니메이션 , 푸터 등 작업.",
     video: yanoljaLive,
     img: yanoljaESG,
+    detail: "/yanolja"
   },
   {
     id: 2,
@@ -19,9 +21,11 @@ export default [
     duration: "7days",
     peoples: "팀프로젝트",
     category: ["HTML5", "CSS3", "JAVASCRIPT"],
-    description: "팀 프로젝트로 진행한 야놀자 홈페이지 클론 코딩. / ESG페이지, 로딩 애니메이션, 푸터 등 작업.",
+    description:
+      "팀 프로젝트로 진행한 야놀자 홈페이지 클론 코딩. / ESG페이지, 로딩 애니메이션, 푸터 등 작업.",
     video: yanoljaLive,
-    img: '#',
+    img: "#",
+    detail: "/yanolja"
   },
   {
     id: 3,
@@ -29,9 +33,11 @@ export default [
     duration: "7days",
     peoples: "팀프로젝트",
     category: ["HTML5", "CSS3", "JAVASCRIPT"],
-    description: "팀 프로젝트로 진행한 야놀자 홈페이지 클론 코딩. / ESG페이지 로딩 애니메이션 푸터 등 작업.",
+    description:
+      "팀 프로젝트로 진행한 야놀자 홈페이지 클론 코딩. / ESG페이지 로딩 애니메이션 푸터 등 작업.",
     video: yanoljaLive,
     img: yanoljaESG,
+    detail: "/yanolja"
   },
   {
     id: 4,
@@ -39,9 +45,11 @@ export default [
     duration: "7days",
     peoples: "개인프로젝트",
     category: ["REACT", "JAVASCRIPT", "styled-components"],
-    description: "cafe24에 있는 호텔 마노아 페이지 REACT로 클론 코딩 / REACT 첫 작업",
+    description:
+      "cafe24에 있는 호텔 마노아 페이지 REACT로 클론 코딩 / REACT 첫 작업",
     video: hotelManoah,
     img: "#",
+    detail: "/yanolja"
   },
   {
     id: 5,
@@ -52,6 +60,7 @@ export default [
     description: "프로젝트 예시 5",
     video: "#",
     img: "#",
+    detail: "/yanolja"
   },
   {
     id: 6,
@@ -62,5 +71,8 @@ export default [
     description: "프로젝트 예시 6",
     video: "#",
     img: "#",
+    detail: "/yanolja"
   },
 ];
+
+export default workListData;

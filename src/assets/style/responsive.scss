@@ -42,7 +42,6 @@
             width: 100%;
             height: 50px;
             background-color: #fff;
-            // border-bottom: 1px solid #000;
             box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
             border-bottom: 1px solid transparent;
             border-image: linear-gradient(
@@ -57,6 +56,7 @@
             cursor: pointer;
             border-radius: 0;
             padding: 0;
+            margin: 0;
             em {
               font-size: 12px;
               margin: 0 20px;
@@ -86,7 +86,7 @@
           }
           &.on::after {
             height: 100%;
-            background-color: #90a17d;
+            background-color: #E99B9B;
           }
           .GnbBtn {
             text-indent: -9999px;
