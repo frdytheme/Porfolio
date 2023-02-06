@@ -8,22 +8,27 @@ function WorksMobile() {
       <h3 className="headline">WORKS</h3>
       <ul className="worksList_mobile">
         {workListData.map((work) => {
+          const { id, name, peoples, duration, img, category, page } = work;
           return (
-            <li key={work.id}>
+            <li key={id}>
               <p>
-                {work.name}
-                <em>{work.peoples}</em>
-                <span>{work.duration}</span>
+                {name}
+                <em>{peoples}</em>
+                <span>{duration}</span>
               </p>
               <div className="imgBox">
-                <img src={work.img} alt="" />
+                <img src={img} alt="" />
               </div>
               <ul>
-                {work.category.map((use, idx) => (
+                {category.map((use, idx) => (
                   <li key={idx}>{use}</li>
                 ))}
               </ul>
-              <Link to="#">view more</Link>
+              {id === 1 ? (
+                <a href={page} target="_blank">view more</a>
+              ) : (
+                <Link to={page}>view more</Link>
+              )}
             </li>
           );
         })}

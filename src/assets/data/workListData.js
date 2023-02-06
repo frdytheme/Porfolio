@@ -27,7 +27,7 @@ export const workListData = [
       "팀 프로젝트로 진행한 야놀자 홈페이지 클론 코딩. / ESG페이지, 로딩 애니메이션, 푸터 등 작업.",
     video: yanoljaLive,
     img: "#",
-    page: "/project2",
+    page: "/yanolja",
     bgColor: "",
   },
   {
@@ -40,7 +40,7 @@ export const workListData = [
       "팀 프로젝트로 진행한 야놀자 홈페이지 클론 코딩. / ESG페이지 로딩 애니메이션 푸터 등 작업.",
     video: yanoljaLive,
     img: yanoljaESG,
-    page: "/project3",
+    page: "/yanolja",
     bgColor: "",
   },
   {
@@ -53,7 +53,7 @@ export const workListData = [
       "cafe24에 있는 호텔 마노아 페이지 REACT로 클론 코딩 / REACT 첫 작업",
     video: hotelManoah,
     img: "#",
-    page: "/project4",
+    page: "/yanolja",
     bgColor: "",
   },
   {
@@ -65,7 +65,7 @@ export const workListData = [
     description: "프로젝트 예시 5",
     video: "#",
     img: "#",
-    page: "/project5",
+    page: "/yanolja",
     bgColor: "",
   },
   {
@@ -77,7 +77,7 @@ export const workListData = [
     description: "프로젝트 예시 6",
     video: "#",
     img: "#",
-    page: "/project6",
+    page: "/yanolja",
     bgColor: "",
   },
 ];
