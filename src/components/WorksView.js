@@ -1,47 +1,36 @@
-import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 
-function WorksView({ data }) {
-  const { name, duration, peoples, category, description, video, page } = data;
-
-  const viewRef = useRef(null);
-  const videoRef = useRef(null);
-
-  const moveViewBtn = (e) => {
-    const cursor = viewRef.current;
-    const mouseX = e.pageX;
-    const mouseY = e.pageY;
-    cursor.style.left = mouseX + "px";
-    cursor.style.top = mouseY + "px";
-
-    const framePos = videoRef.current.getBoundingClientRect();
-    const frameTop = framePos.y + window.scrollY;
-
-    if (
-      framePos.x < mouseX &&
-      mouseX < framePos.x + framePos.width &&
-      frameTop < mouseY &&
-      mouseY < frameTop + framePos.height
-    ) {
-      viewRef.current.classList.add("on");
-    } else {
-      viewRef.current.classList.remove("on");
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener("mousemove", moveViewBtn);
-    return () => {
-      window.removeEventListener("mousemove", moveViewBtn);
-    };
-  }, []);
+function WorksView({ data, videoRef }) {
+  const {
+    id,
+    name,
+    duration,
+    peoples,
+    category,
+    description,
+    video,
+    img,
+    page,
+  } = data;
 
   return (
     <>
       <aside className="worksView">
-        <Link className="videoFrame" ref={videoRef} to={page}>
-          <video src={video} autoPlay loop muted></video>
-        </Link>
+        {id === 1 ? (
+          <a
+            href={page}
+            target="_blank"
+            className="portfolioLink"
+            ref={videoRef}
+            rel="noreferrer">
+            <img src={img} alt={name} />
+          </a>
+        ) : (
+          <Link className="videoFrame" ref={videoRef} to={page}>
+            <video src={video} autoPlay loop muted></video>
+          </Link>
+        )}
+
         <ul className="workInfo">
           <li>
             <h4>Project Name</h4>
@@ -68,9 +57,6 @@ function WorksView({ data }) {
             })}
           </li>
         </ul>
-        <div className="viewMore" ref={viewRef}>
-          view more
-        </div>
       </aside>
     </>
   );

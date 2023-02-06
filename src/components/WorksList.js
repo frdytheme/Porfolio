@@ -27,7 +27,7 @@ function WorksList({ setWorksIndex, workListData }) {
         const { id, name, peoples, category } = data;
         return (
           <li
-            className="workItem"
+            className={`workItem ${id === 1 ? "checked" : ""}`}
             key={id}
             onClick={() => {
               setWorksIndex(id);
