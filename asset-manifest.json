@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.f2b1d779.css",
-    "main.js": "/Portfolio/static/js/main.d0cd0b00.js",
+    "main.css": "/Portfolio/static/css/main.8ef132db.css",
+    "main.js": "/Portfolio/static/js/main.f47487ca.js",
     "static/media/hotelManoah.mp4": "/Portfolio/static/media/hotelManoah.c4bbefd73e8ce2769a11.mp4",
     "static/media/yanoljaLive.mp4": "/Portfolio/static/media/yanoljaLive.7de6a7b96b93287a9570.mp4",
     "static/media/Yanolja_ESG_img_Mobile.png": "/Portfolio/static/media/Yanolja_ESG_img_Mobile.cfed23f41d5936307aed.png",
     "static/media/PretendardVariable.woff2": "/Portfolio/static/media/PretendardVariable.36b3a87cd98126711b2b.woff2",
+    "static/media/PortfolioCover.png": "/Portfolio/static/media/PortfolioCover.f386f19ffa615e33df4a.png",
     "index.html": "/Portfolio/index.html",
-    "main.f2b1d779.css.map": "/Portfolio/static/css/main.f2b1d779.css.map",
-    "main.d0cd0b00.js.map": "/Portfolio/static/js/main.d0cd0b00.js.map"
+    "main.8ef132db.css.map": "/Portfolio/static/css/main.8ef132db.css.map",
+    "main.f47487ca.js.map": "/Portfolio/static/js/main.f47487ca.js.map"
   },
   "entrypoints": [
-    "static/css/main.f2b1d779.css",
-    "static/js/main.d0cd0b00.js"
+    "static/css/main.8ef132db.css",
+    "static/js/main.f47487ca.js"
   ]
 }
