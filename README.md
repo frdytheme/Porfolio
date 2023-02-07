@@ -25,7 +25,7 @@
 
 ## 2. 디렉토리 구조
 
-![Directory](.%PUBLIC_URL%/images/Directory.png)
+![Directory](./public/images/Directory.png)
 
 ---
 
