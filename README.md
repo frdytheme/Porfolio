@@ -21,7 +21,7 @@
 
 </aside>
 
----
+
 
 ## 2. 디렉토리 구조
 
@@ -49,9 +49,9 @@
     - 가독성을 위해 연산자, 주석, 괄호 중괄호 등 띄어쓰기 (Prettier 자동 정렬 참고)
         
         ```jsx
-        ~~console.log('주석처리');//읽기어려움~~
+        console.log('주석처리');//읽기어려움
         console.log('읽기 편하게'); // 가독성 향상
-        ~~console.log(x+y=z);~~
+        console.log(x+y=z);
         console.log(x + y = z);
         ```
         
@@ -121,7 +121,7 @@
     - 변수는 한 줄에 하나씩 선언한다.
     
     ```jsx
-    ~~let a = 1, b = 2;~~
+    let a = 1, b = 2;
     
     let a = 1;
     let b = 2;
@@ -132,7 +132,7 @@
     - 함수 내 구문이 한 줄이어도 줄 바꿈 후 작성
     
     ```jsx
-    ~~const isOneLine = () => {	console.log("줄 바꿈") }~~
+    const isOneLine = () => {	console.log("줄 바꿈") }
     
     const isOneLine = () => {
     	console.log("줄 바꿈")
