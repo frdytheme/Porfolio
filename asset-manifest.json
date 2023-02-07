@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.8ef132db.css",
-    "main.js": "/Portfolio/static/js/main.f47487ca.js",
+    "main.js": "/Portfolio/static/js/main.bfe87232.js",
     "static/media/hotelManoah.mp4": "/Portfolio/static/media/hotelManoah.c4bbefd73e8ce2769a11.mp4",
     "static/media/yanoljaLive.mp4": "/Portfolio/static/media/yanoljaLive.7de6a7b96b93287a9570.mp4",
     "static/media/Yanolja_ESG_img_Mobile.png": "/Portfolio/static/media/Yanolja_ESG_img_Mobile.cfed23f41d5936307aed.png",
@@ -9,10 +9,10 @@
     "static/media/PortfolioCover.png": "/Portfolio/static/media/PortfolioCover.f386f19ffa615e33df4a.png",
     "index.html": "/Portfolio/index.html",
     "main.8ef132db.css.map": "/Portfolio/static/css/main.8ef132db.css.map",
-    "main.f47487ca.js.map": "/Portfolio/static/js/main.f47487ca.js.map"
+    "main.bfe87232.js.map": "/Portfolio/static/js/main.bfe87232.js.map"
   },
   "entrypoints": [
     "static/css/main.8ef132db.css",
-    "static/js/main.f47487ca.js"
+    "static/js/main.bfe87232.js"
   ]
 }
