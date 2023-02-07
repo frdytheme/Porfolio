@@ -14,7 +14,7 @@ export const workListData = [
       "프론트엔드 포트폴리오 페이지 프로젝트. / 리액트로 작업한 반응형 웹페이지입니다.",
     video: "",
     img: PortfolioCover,
-    page: "https://animated-morning-f9b.notion.site/2023-d1b987c8bbcb4941aff850749c81df36",
+    page: "https://frdytheme.notion.site/d1b987c8bbcb4941aff850749c81df36",
     bgColor: "#fff",
   },
   {
