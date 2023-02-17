@@ -16,7 +16,7 @@ function WorksView({ data, videoRef }) {
   return (
     <>
       <aside className="worksView">
-        {id === 1 ? (
+        {img ? (
           <a
             href={page}
             target="_blank"
@@ -26,9 +26,14 @@ function WorksView({ data, videoRef }) {
             <img src={img} alt={name} />
           </a>
         ) : (
-          <Link className="videoFrame" ref={videoRef} to={page}>
+          <a
+            className="videoFrame"
+            ref={videoRef}
+            href={page}
+            target="_blank"
+            rel="noreferrer">
             <video src={video} autoPlay loop muted></video>
-          </Link>
+          </a>
         )}
 
         <ul className="workInfo">
