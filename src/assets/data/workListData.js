@@ -1,6 +1,6 @@
 import yanoljaLive from "../video/yanoljaLive.mp4";
 import hotelManoah from "../video/hotelManoah.mp4";
-import multibus from "../video/Multibus.webm"
+import multibus from "../video/Multibus.webm";
 import yanoljaESG from "../images/Yanolja_ESG_img_Mobile.png";
 import PortfolioCover from "../images/PortfolioCover.png";
 
@@ -10,7 +10,13 @@ export const workListData = [
     name: "고속버스 예매 조회",
     duration: "8days",
     peoples: "개인프로젝트",
-    category: ["React", "redux-toolkit", "REST API", "JAVASCRIPT", "styled-components"],
+    category: [
+      "React",
+      "redux-toolkit",
+      "REST API",
+      "JAVASCRIPT",
+      "styled-components",
+    ],
     description:
       "고속버스 공공 API를 활용한 웹사이트. / 실시간으로 예매 가능한 고속버스의 /배차 정보를 조회할 수 있는 사이트입니다.",
     video: multibus,
@@ -67,7 +73,7 @@ export const workListData = [
       "cafe24에 있는 호텔 마노아 페이지  / REACT로 첫 작업한 클론 코딩 사이트",
     video: hotelManoah,
     img: "",
-    page: "/yanolja",
+    page: "https://frdytheme.github.io/230110Web/",
     bgColor: "",
   },
 ];
