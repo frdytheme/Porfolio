@@ -3,13 +3,10 @@
 ### 1. 이 프로젝트를 통해 얻고자 하는 게 무엇인가?
 
 #### * 배운 것 최대한 활용하기
-
-<img src="https://www.notion.so/icons/chat_lightgray.svg" alt="https://www.notion.so/icons/chat_lightgray.svg" width="40px" /> 약 6개월의 기간 동안 프론트엔드에 필요한 많은 것들을 배웠지만 직접 기획하고 디자인한 웹페이지를 만드는 건 처음인 만큼 그동안 배운 것을 최대한 활용하기
+약 6개월의 기간 동안 프론트엔드에 필요한 많은 것들을 배웠지만 직접 기획하고 디자인한 웹페이지를 만드는 건 처음인 만큼 그동안 배운 것을 최대한 활용하기
 
 ### * 오류와 타협하지 않기
-
-<img src="https://www.notion.so/icons/chat_lightgray.svg" alt="https://www.notion.so/icons/chat_lightgray.svg" width="40px" /> 작업 과정에서 발생하는 오류와 타협하지 않고
-**“ 무엇으로 어떻게 해결하는가? ”** 보다 **” 왜 해결이 되었는가? ”** 에 집중해서 문제 해결하기
+작업 과정에서 발생하는 오류와 타협하지 않고 **“ 무엇으로 어떻게 해결하는가? ”** 보다 **” 왜 해결이 되었는가? ”** 에 집중해서 문제 해결하기
 
 
 
@@ -26,120 +23,13 @@
 **used Tools :** GitHub, Visual Studio Code, Figma
 
 
-## 4. 코딩 컨벤션
 
-### 띄어쓰기
-
-- 가독성을 위해 연산자, 주석, 괄호 중괄호 등 띄어쓰기 (Prettier 자동 정렬 참고)
-        
-```jsx
-console.log('주석처리');//읽기어려움
-console.log('읽기 편하게'); // 가독성 향상
-console.log(x+y=z);
-console.log(x + y = z);
-```
-
-
-
-### 네이밍 규칙
-
-- 두 단어 이상 조합은 카멜 표기법 사용
-
-```jsx
-#txtBox / #slideBox / #scrollBox / #imgBox
-
-.headerTitle .footerTitle .gnbTitle
-```
-
-- 변수 / 함수명은 동작이나 개념을 연상시키는 단어를 조합해서 작성.
-
-```jsx
-camelCase / headerTitle / getValue
-```
-
-- class, id 명은 요소의 성격을 나타내는 단어 활용.
-
-```jsx
-show / get / set / check / create … 등 참고
-```
-
-- 외부 파일명 (이미지, 비디오 등…)은 각 구역별로 미리 정리해서 사용 (파일 이름에는 _ 사용)
-
-```jsx
-article1_img01.png  /  footer_logo.svg  /  instagram_logo.jpg …
-```
-
-- 같은 변수, 아이디를 순차적으로 작성할 때는 1부터 시작되게 작성.
-
-```jsx
-box, box2, box3, box4
-
-box1, box2, box3, box4
-```
-
-
-
-### 마크업 / css 규칙
-
-- css / scss / styled-components 등 하나의 형식을 통일해서 사용
-- 리셋 파일은 reset.css
-- 폰트는 font.css 웹 폰트로 만들어서 사용
-- 전역 스타일, @keyframes, css 변수는 문서 최상단에 작성
-- 페이지 구조에 따라 순차적으로 마크업
-position:fixed 요소 (top버튼, 메뉴 등)는 위치에 따라 최상단에 순차적으로 작성
-- 외부 아이콘 사용 시 같은 출처 아이콘 통일해서 사용
-
-
-
-### JS 규칙
-
-- 괄호(), 중괄호{}, 세미콜론; 의 작성이나 띄어쓰기 규칙은 Prettier 스타일로 통일
-- 수정 전 주석 처리한 함수는 삭제 정리.
-- 변수는 한 줄에 하나씩 선언한다.
-
-```jsx
-let a = 1, b = 2;
-
-let a = 1;
-let b = 2;
-```
-
-- 디버깅을 위해 작성한 console.log()는 디버깅 후 꼭 삭제하기
-- 함수 내에서 사용되는 변수는 되도록 지역 변수로 작성하며 사용되는 구문 앞에서 선언.
-- 함수 내 구문이 한 줄이어도 줄 바꿈 후 작성
-
-```jsx
-const isOneLine = () => {	console.log("줄 바꿈") }
-
-const isOneLine = () => {
-console.log("줄 바꿈")
-}
-```
-
-- 변수명, 함수명이 두 단어 이상의 조합이면 카멜표기법 사용. **(ex. useCamelCase)**
-- 해당 문서 내에서 공통적으로 쓰이는 변수, 함수는 문서 상단에 선언 후 한 줄 띄우기.
-- 함수는 실행 순서에 맞춰 작성하며 화살표 함수를 사용한다.
-- 배열을 변수에 복사할 때는 전개 구문(스프레드 연산자) “…”을 사용하며 함수 내에서만 사용할 경우 지역 변수로 선언해서 사용.
-
-
-
-### React 규칙
-
-- 컴포넌트 파일명은 파스칼 표기법으로 작성한다 (ex. PascalCase.js)
-- image 파일은 src 경로에 저장하며 변수로 import 후 사용.
-- 함수형 컴포넌트로 작성하며 함수 선언문으로 통일한다.
-- useState, useRef는 상단에 작성하며 한 줄 띄우기.
-- useEffect에 사용되는 콜백 함수는 순차적으로 위에 작성하며 useEffect는 가장 아래에 작성.
-- 부모 컴포넌트에서 전달받은 props는 가능하면 문서 최상단에서 구조 분해 할당 후 사용.
-
-
-## 5. 페이지 구성
+## 4. 페이지 구성
 
 **All**
 
 useMediaQuery를 이용한 PC / 모바일 반응형 웹페이지
 
----
 
 **Header / Navigation**
 
@@ -148,7 +38,6 @@ useMediaQuery를 이용한 PC / 모바일 반응형 웹페이지
 - 클릭 시 해당 컴포넌트로 스크롤 이동하는 onClick 이벤트
 - 현재 위치한 컴포넌트를 나타내는 Nav 애니메이션
 
----
 
 **Main**
 
@@ -158,7 +47,6 @@ useMediaQuery를 이용한 PC / 모바일 반응형 웹페이지
 
 - useRef + setTimeout + forEach를 이용한 메인 타이틀 비동기 이벤트 처리
 
----
 
 **Work 세션**
 
@@ -182,8 +70,7 @@ useMediaQuery를 이용한 PC / 모바일 반응형 웹페이지
 
 ---
 
-내비게이션 버튼에 해당 페이지로 이동하는 onClick 이벤트를 주기 위해
-각 컴포넌트의 offsetTop 값을 배열로 담는 함수를 사용했으나 값이 이상하게 출력 됨.
+내비게이션 버튼에 해당 페이지로 이동하는 onClick 이벤트를 주기 위해 각 컴포넌트의 offsetTop 값을 배열로 담는 함수를 사용했으나 값이 이상하게 출력 됨.
 
 
 ### 원인 파악
