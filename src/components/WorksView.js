@@ -1,38 +1,16 @@
-import { Link } from "react-router-dom";
-
 function WorksView({ data, videoRef }) {
-  const {
-    id,
-    name,
-    duration,
-    peoples,
-    category,
-    description,
-    video,
-    img,
-    page,
-  } = data;
+  const { name, duration, peoples, category, description, video, img, page } = data;
 
   return (
     <>
       <aside className="worksView">
         {img ? (
-          <a
-            href={page}
-            target="_blank"
-            className="portfolioLink"
-            ref={videoRef}
-            rel="noreferrer">
+          <a href={page} target="_blank" className="portfolioLink" ref={videoRef} rel="noreferrer">
             <img src={img} alt={name} />
           </a>
         ) : (
-          <a
-            className="videoFrame"
-            ref={videoRef}
-            href={page}
-            target="_blank"
-            rel="noreferrer">
-            <video src={video} autoPlay loop muted></video>
+          <a className="videoFrame" ref={videoRef} href={page} target="_blank" rel="noreferrer">
+            <video src={video} autoPlay loop muted />
           </a>
         )}
 

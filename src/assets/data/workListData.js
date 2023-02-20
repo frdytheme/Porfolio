@@ -60,7 +60,7 @@ export const workListData = [
       "팀 프로젝트로 진행한 야놀자 홈페이지 클론 코딩. / ESG페이지 로딩 애니메이션 푸터 등 작업.",
     video: yanoljaLive,
     img: "",
-    page: "/yanolja",
+    page: "https://frdytheme.notion.site/52b86ad78ea04c2f98156c53fdd8eb77",
     bgColor: "",
   },
   {
