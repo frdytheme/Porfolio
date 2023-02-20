@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.81808545.css",
-    "main.js": "/Portfolio/static/js/main.fd3e146b.js",
+    "main.js": "/Portfolio/static/js/main.0a309c50.js",
     "static/media/Multibus.webm": "/Portfolio/static/media/Multibus.bf13ae8683b97c295fed.webm",
     "static/media/hotelManoah.mp4": "/Portfolio/static/media/hotelManoah.c4bbefd73e8ce2769a11.mp4",
     "static/media/yanoljaLive.mp4": "/Portfolio/static/media/yanoljaLive.7de6a7b96b93287a9570.mp4",
@@ -10,10 +10,10 @@
     "static/media/PortfolioCover.png": "/Portfolio/static/media/PortfolioCover.f386f19ffa615e33df4a.png",
     "index.html": "/Portfolio/index.html",
     "main.81808545.css.map": "/Portfolio/static/css/main.81808545.css.map",
-    "main.fd3e146b.js.map": "/Portfolio/static/js/main.fd3e146b.js.map"
+    "main.0a309c50.js.map": "/Portfolio/static/js/main.0a309c50.js.map"
   },
   "entrypoints": [
     "static/css/main.81808545.css",
-    "static/js/main.fd3e146b.js"
+    "static/js/main.0a309c50.js"
   ]
 }
