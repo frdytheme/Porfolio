@@ -4,9 +4,9 @@
 
 ![메인이미지](./public/images/readme_coverImg.png)
 
-#### 사용 기술 <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=HTML5&logoColor=white"/> <img src="https://img.shields.io/badge/Java--Script-F7DF1E?style=flat-square&logo=JAVASCRIPT&logoColor=black"/> <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=React&logoColor=black"/>
-#### 작업 기간 - 2023년 1월 27일 → 2023년 2월 6일
-#### 작업 유형 - 개인프로젝트(포트폴리오)
+- 사용 기술 <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=HTML5&logoColor=white"/> <img src="https://img.shields.io/badge/Java--Script-F7DF1E?style=flat-square&logo=JAVASCRIPT&logoColor=black"/> <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=React&logoColor=black"/>
+- 작업 기간 - 2023년 1월 27일 → 2023년 2월 6일
+- 작업 유형 - 개인프로젝트(포트폴리오)
 
 ### 1. 이 프로젝트를 통해 얻고자 하는 게 무엇인가?
 
