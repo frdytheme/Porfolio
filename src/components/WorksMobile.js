@@ -1,6 +1,5 @@
 import "../assets/style/works.scss";
 import workListData from "../assets/data/workListData";
-import { Link } from "react-router-dom";
 
 function WorksMobile() {
   return (
@@ -17,18 +16,16 @@ function WorksMobile() {
                 <span>{duration}</span>
               </p>
               <div className="imgBox">
-                <img src={img} alt="" />
+                <img src={img} alt="프로젝트 이미지" />
               </div>
               <ul>
-                {category.map((use, idx) => (
+                {category.slice(0,4).map((use, idx) => (
                   <li key={idx}>{use}</li>
                 ))}
               </ul>
-              {id === 1 ? (
-                <a href={page} target="_blank">view more</a>
-              ) : (
-                <Link to={page}>view more</Link>
-              )}
+              <a href={page} target="_blank" rel="noreferrer">
+                view more
+              </a>
             </li>
           );
         })}
