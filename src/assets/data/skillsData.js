@@ -1,44 +1,3 @@
-/*
-기술 스택
-HTML5 & CSS3
-웹 접근성을 고려한 시맨틱 태그
-
-​
-
-JavaScript
-ES6+ 문법
-Map, Filter, Reduce 등 고차 함수
-
-​
-
-비동기적 실행
-함수 setTimeout, setInterval / 콜백함수 / promise /  async, await
-통신 Fetch API, Axios 라이브러리
-런타임 node js 
-
-​
-
-SPA Framework & Library React 
-컴포넌트 라이프 사이클에 대한 이해
-Context API, Redux Toolkit 으로 전역 상태 관리
-Hook
-React-router-dom
-
-​
-
-기타
-Firebase
-데이터 생성 추가
-
-​
-
-Tool
-Git, Github
-VSCode
-Figma
-
-*/
-
 export const skillsData = [
   {
     id: 1,
@@ -66,7 +25,7 @@ export const skillsData = [
         no: 4,
         list: "콜백함수, setTimeout, setInterval, Promise, async & await 비동기 함수 이해 및 활용",
       },
-      { no: 5, list: "fetch API, axios 라이버리를 활용한 외부 데이터 통신" },
+      { no: 5, list: "fetch API, axios 라이브러리를 활용한 외부 데이터 통신" },
     ],
   },
   {
