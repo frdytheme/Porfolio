@@ -17,7 +17,7 @@ export const workListData = [
       "고속버스 공공 API를 활용한 웹사이트. / 실시간으로 예매 가능한 고속버스의 /배차 정보를 조회할 수 있는 사이트입니다.",
     video: multibus,
     img: multibusMobile,
-    page: "https://frdytheme.notion.site/399cafc6848a496e8055611a4007cfa1",
+    page: "https://github.com/frdytheme/multibus",
     viewColor: "#fff",
   },
   {
@@ -29,7 +29,7 @@ export const workListData = [
     description: "프론트엔드 포트폴리오 페이지 프로젝트. / 리액트로 작업한 반응형 웹페이지입니다.",
     video: PortfolioCover,
     img: PortfolioCover,
-    page: "https://frdytheme.notion.site/d1b987c8bbcb4941aff850749c81df36",
+    page: "https://github.com/frdytheme/Portfolio",
     bgColor: "#fff",
   },
   {
