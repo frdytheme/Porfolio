@@ -1,14 +1,18 @@
 import yanoljaLive from "../video/yanoljaLive.mp4";
 import hotelManoah from "../video/hotelManoah.mp4";
 import multibus from "../video/Multibus.webm";
+import minigame from "../video/minigameboy.webm";
+import minigameMobile from "../images/minigameboy_img_Mobile.png";
 import yanoljaESG from "../images/Yanolja_ESG_img_Mobile.png";
 import PortfolioCover from "../images/PortfolioCover.png";
 import hotelManoahMobile from "../images/hotelManoah_img_Mobile.png";
 import multibusMobile from "../images/multibus_img_Mobile.png";
 
+let id = 1;
+
 export const workListData = [
   {
-    id: 1,
+    id: id++,
     name: "고속버스 예매 조회",
     duration: "8days",
     peoples: "개인프로젝트",
@@ -21,7 +25,19 @@ export const workListData = [
     viewColor: "#fff",
   },
   {
-    id: 2,
+    id: id++,
+    name: "미니게임 프로젝트",
+    duration: "1~2days",
+    peoples: "개인프로젝트",
+    category: ["HTML5&CSS3", "React", "Vue", "JavaScript"],
+    description: "간단한 로직으로 구현 가능한 게임 모음 사이트 / 1Day 1Game 만드는 것이 목적입니다.",
+    video: minigame,
+    img: minigameMobile,
+    page: "https://frdytheme.github.io/oneday-onegame/",
+    viewColor: "#fff",
+  },
+  {
+    id: id++,
     name: "Portfolio",
     duration: "10days",
     peoples: "개인프로젝트",
@@ -33,7 +49,7 @@ export const workListData = [
     bgColor: "#fff",
   },
   {
-    id: 3,
+    id: id++,
     name: "야놀자 디자인 구현",
     duration: "7days",
     peoples: "팀프로젝트",
@@ -45,7 +61,7 @@ export const workListData = [
     bgColor: "",
   },
   {
-    id: 4,
+    id: id++,
     name: "호텔 마노아 디자인 구현",
     duration: "7days",
     peoples: "개인프로젝트",

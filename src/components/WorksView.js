@@ -1,10 +1,10 @@
 function WorksView({ data, videoRef }) {
-  const { name, duration, peoples, category, description, video, img, page, id } = data;
+  const { name, duration, peoples, category, description, video, img, page } = data;
 
   return (
     <>
       <aside className="worksView">
-        {id === 2 ? (
+        {name === "Portfolio" ? (
           <a href={page} target="_blank" className="portfolioLink" ref={videoRef} rel="noreferrer">
             <img src={img} alt={name} />
           </a>
