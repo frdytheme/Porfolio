@@ -107,6 +107,7 @@
       .workInfo {
         display: flex;
         width: 100%;
+        
         li {
           border-right: 1px solid var(--color-lightGrey);
           padding: 0 1.8vw;
@@ -119,8 +120,7 @@
           }
           &:last-child {
             padding: 0;
-            margin-left: 8vw;
-            padding-right: 2vw;
+            margin-left: 30px;
             h4 {
               color: var(--color-softBlk);
               font-size: 1vw;

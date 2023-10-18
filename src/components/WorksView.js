@@ -1,6 +1,5 @@
 function WorksView({ data, videoRef }) {
   const { name, duration, peoples, category, description, video, img, page } = data;
-
   return (
     <>
       <aside className="worksView">

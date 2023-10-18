@@ -6,7 +6,7 @@ import WorksView from "./WorksView";
 import { useEffect, useRef } from "react";
 
 function Works() {
-  const [worksIndex, setWorksIndex] = useState(1);
+  const [worksIndex, setWorksIndex] = useState(0);
 
   const viewRef = useRef(null);
   const videoRef = useRef(null);
