@@ -51,7 +51,7 @@ function Header({ getTitle, mainRef }) {
     <header ref={headerRef}>
       <div className="titleSlide" onClick={() => moveToTitle(0)}>
         <h1>
-          Frontend & Design Gunho Kim
+          UI / UX . Frontend Gunho Kim
           <em>2023</em>
         </h1>
       </div>

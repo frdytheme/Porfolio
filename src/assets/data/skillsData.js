@@ -8,7 +8,7 @@ export const skillsData = [
       { no: 3, list: "미디어 쿼리를 활용한 반응형 웹 제작" },
       { no: 4, list: "flex / grid / position을 활용한 레이아웃 구축" },
       { no: 5, list: "가상 선택자를 활용해 간단한 효과 구현" },
-      { no: 6, list: "@keyframe을 활용한 svg 파일 애니메이션 제어" },
+      { no: 6, list: "@keyframe을 활용한 애니메이션 제어" },
     ],
   },
   {

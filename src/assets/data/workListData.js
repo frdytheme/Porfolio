@@ -1,8 +1,6 @@
 import yanoljaLive from "../video/yanoljaLive.mp4";
 import hotelManoah from "../video/hotelManoah.mp4";
 import multibus from "../video/Multibus.webm";
-import minigame from "../video/minigameboy.webm";
-import minigameMobile from "../images/minigameboy_img_Mobile.png";
 import yanoljaESG from "../images/Yanolja_ESG_img_Mobile.png";
 import PortfolioCover from "../images/PortfolioCover.png";
 import hotelManoahMobile from "../images/hotelManoah_img_Mobile.png";
@@ -20,7 +18,7 @@ export const workListData = [
     peoples: "개인프로젝트(100%)",
     category: ["React", "Node.js", "express", "MongoDB", "반응형"],
     description:
-      "직접 데이터베이스를 구축해 새롭게 디자인 한 반스의 반응형 홈페이지입니다.",
+      "직접 데이터베이스를 구축해 새롭게 디자인 한 반스의 반응형 홈페이지입니다. / - jwt토큰 인증 방식의 로그인 기능 / - 세션 스토리지와 유저DB를 통한 장바구니 동기화 / - 이메일 인증번호 전송과 확인을 통한 회원가입 기능을 구현했습니다.",
     video: vans,
     img: vansImg,
     page: "https://github.com/frdytheme/VansRedesign",
@@ -33,23 +31,10 @@ export const workListData = [
     peoples: "개인프로젝트(100%)",
     category: ["React", "REST API", "Redux", "JavaScript", "styled-components"],
     description:
-      "고속버스 공공 API를 활용한 웹사이트. / 실시간으로 예매 가능한 고속버스의 /배차 정보를 조회할 수 있는 사이트입니다.",
+      "고속버스 공공 API를 활용한 웹사이트입니다. / - OpenAPI를 활용한 실시간 고속버스 예매 정보 조회",
     video: multibus,
     img: multibusMobile,
     page: "https://github.com/frdytheme/multibus",
-    viewColor: "#fff",
-  },
-  {
-    id: id++,
-    name: "미니게임 프로젝트",
-    duration: "1~2days",
-    peoples: "개인프로젝트(100%)",
-    category: ["HTML5&CSS3", "React", "Vue", "JavaScript"],
-    description:
-      "간단한 로직으로 구현 가능한 게임 모음 사이트입니다.",
-    video: minigame,
-    img: minigameMobile,
-    page: "https://frdytheme.github.io/oneday-onegame/",
     viewColor: "#fff",
   },
   {
@@ -59,7 +44,7 @@ export const workListData = [
     peoples: "개인프로젝트(100%)",
     category: ["React", "반응형", "SCSS", "JavaScript"],
     description:
-      "프론트엔드 포트폴리오 페이지 프로젝트. / 리액트로 작업한 반응형 웹페이지입니다.",
+      "프론트엔드 포트폴리오 사이트입니다. / - 직접 디자인한 포트폴리오 사이트로 모바일과 PC 반응형으로 작업했습니다.",
     video: PortfolioCover,
     img: PortfolioCover,
     page: "https://github.com/frdytheme/Portfolio",
@@ -72,7 +57,7 @@ export const workListData = [
     peoples: "팀프로젝트(30%)",
     category: ["HTML5", "CSS3", "JavaScript"],
     description:
-      "팀 프로젝트로 진행한 야놀자 홈페이지 디자인 구현. / ESG페이지 로딩 애니메이션 푸터 등 작업.",
+      "팀 프로젝트로 진행한 야놀자 홈페이지 디자인 구현. / - ESG페이지를 작업했습니다 / - 일러스트레이터로 만든 svg파일의 애니메이션 구현",
     video: yanoljaLive,
     img: yanoljaESG,
     page: "https://frdytheme.notion.site/52b86ad78ea04c2f98156c53fdd8eb77",
@@ -85,7 +70,7 @@ export const workListData = [
     peoples: "개인프로젝트(100%)",
     category: ["React", "JavaScript", "styled-components"],
     description:
-      "cafe24에 있는 호텔 마노아 페이지  / 처음 REACT로 작업한 디자인 구현 사이트",
+      "cafe24에 있는 호텔 마노아 페이지  / - React로 처음 작업한 웹사이트입니다. / - 원본 사이트의 디자인을 그대로 구현했습니다.",
     video: hotelManoah,
     img: hotelManoahMobile,
     page: "https://frdytheme.github.io/230110Web/",
