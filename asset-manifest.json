@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.2f6df143.css",
-    "main.js": "/Portfolio/static/js/main.0cf5319d.js",
+    "main.css": "/Portfolio/static/css/main.753e73db.css",
+    "main.js": "/Portfolio/static/js/main.4b903389.js",
     "static/media/vans_redesign.webm": "/Portfolio/static/media/vans_redesign.ff199e9a875f565b2634.webm",
     "static/media/Multibus.webm": "/Portfolio/static/media/Multibus.bf13ae8683b97c295fed.webm",
     "static/media/hotelManoah.mp4": "/Portfolio/static/media/hotelManoah.c4bbefd73e8ce2769a11.mp4",
@@ -13,11 +13,11 @@
     "static/media/hotelManoah_img_Mobile.png": "/Portfolio/static/media/hotelManoah_img_Mobile.6c308e03e7e8a0b0d5f1.png",
     "static/media/PortfolioCover.png": "/Portfolio/static/media/PortfolioCover.f386f19ffa615e33df4a.png",
     "index.html": "/Portfolio/index.html",
-    "main.2f6df143.css.map": "/Portfolio/static/css/main.2f6df143.css.map",
-    "main.0cf5319d.js.map": "/Portfolio/static/js/main.0cf5319d.js.map"
+    "main.753e73db.css.map": "/Portfolio/static/css/main.753e73db.css.map",
+    "main.4b903389.js.map": "/Portfolio/static/js/main.4b903389.js.map"
   },
   "entrypoints": [
-    "static/css/main.2f6df143.css",
-    "static/js/main.0cf5319d.js"
+    "static/css/main.753e73db.css",
+    "static/js/main.4b903389.js"
   ]
 }
